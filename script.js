@@ -11,7 +11,7 @@ async function fetchQuizData() {
       throw new Error("Failed to fetch quiz data");
     }
     const data = await response.json();
-    quizData = data;
+    quizData = data.artworks;
     displayQuestions();
   } catch (error) {
     console.error("Error fetching quiz data:", error.message);
