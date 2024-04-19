@@ -5,7 +5,7 @@ let timerInterval; // Variable to store the timer interval
 async function fetchQuizData() {
   try {
     const response = await fetch(
-      "http://localhost:5001/questions"
+      "https://getpantry.cloud/apiv1/pantry/3eaaabe6-b43e-455f-9164-3fafb04edac5/basket/newBasket93/"
     );
     if (!response.ok) {
       throw new Error("Failed to fetch quiz data");
